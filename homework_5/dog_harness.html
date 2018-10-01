@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- fonts -->
+        <link rel="stylesheet" href="https://use.typekit.net/lfm2euf.css">
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    
+    <body>
+        <nav>
+            <div id="nav-title">MUDDY PAWS<br/> ADVENTURE GEAR</div>
+            <div class="nav-link"><a href="index.html">HOME</a></div>
+            <div class="nav-link"><a href="shop.html">SHOP</a></div>
+            <div class="nav-link"><a href="index.html">CART</a></div>
+        </nav>
+        <div id="main-container">
+            <a href="shop.html" id="back-nav">&larr;&nbsp;BACK</a>
+            <div id="product-page">
+                <div id="product-image">
+                    <img src="assets/product_1.jpg"/>
+                </div>
+                <div id="product-descrp">
+                    <div id="product-title">Ultra Lite Dog Harness</div>
+                    <p>A lightweight, comfy harness for your doggo.</p>
+                    <div class="detail">
+                        <div class="title">DETAILS</div>
+                        <p>15 in x 40 in x 8 in</p>
+                    </div>
+                    <div class="detail">
+                        <div class="title">COLORS</div>
+                        <div>
+                            <input type="radio" class="color-option" name="color" style="background-color: #5FC0F8"/>
+                            <input type="radio" class="color-option" name="color" style="background-color: #B8E986"/>
+                            <input type="radio" class="color-option" name="color" style="background-color: #FBC162"/>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="title">SIZE</div>
+                        <div>
+                            <input type="radio" class="size-option" id="s" name="size"/>
+                            <label class="size-label" for="s">S</label>
+                            <input type="radio" class="size-option" id="m" name="size"/>
+                            <label class="size-label" for="m">M</label>
+                            <input type="radio" class="size-option" id="l" name="size"/>
+                            <label class="size-label" for="l">L</label>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="title">QUANTITY</div>
+                        <div class="num-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" id="minus">-</button>
+                            <input type="number" name="quantity" min="1" max="10" placeholder="1">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" id="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="checked.js" type="text/javascript"></script>
+    </body>
+</html>
