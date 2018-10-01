@@ -8,6 +8,7 @@
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="main.js" type="text/javascript"></script>
     
 </head>
@@ -22,18 +23,19 @@
     </header>
     <div id="todo-lists">
         <div class="list">
-            <a href="list.html">Groceries</a>
+            <a href="list.html">Groceries</a><button class="delete-list">X</button>
         </div>
 
         <div class="list">
-           Homework
+           Homework<button class="delete-list">X</button>
         </div>
 
         <div class="list">
-           Random Errands
-        </div>>
+           Random Errands<button class="delete-list">X</button>
+        </div>
     </div>
-
+    <input type="text" id="new-list"/>
+    <button id="add-list">Add List</button>
 </body>
 
 </html>

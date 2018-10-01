@@ -21,3 +21,12 @@ $(document).on("click", "#add-item", function() {
     list.append("<li>" + itemInput.val() + " <button class='delete-item'>X</button></li>");
 });
 
+$(document).on("click", "#add-list", function() {
+    var list = $("#todo-lists");
+    var newListInput = $("#new-list");
+    list.append("<div class='list'>" + newListInput.val() + "<button class='delete-list'>X</button></div>");
+});
+
+$(document).on("click", ".delete-list", function() {
+    $(this).parent().remove();
+});
