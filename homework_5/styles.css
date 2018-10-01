@@ -5,6 +5,8 @@ html, body{
     overflow: hidden;
 }
 
+/*********** NAVIGATION ************/
+
 nav{
     height: 100%;
     margin: 0;
@@ -19,6 +21,7 @@ nav{
     width: 275px;
     text-align: center;
 }
+
 .nav-link{
     width: 275px;
     padding-top: 10px;
@@ -31,7 +34,7 @@ nav{
     letter-spacing: 0.1em;
     font-size: 1.1em;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
     
 }
 
@@ -42,18 +45,7 @@ nav{
     font-size: .8em;
 }
 
-#main-container{
-    margin-left: 275px;
-    color: black;
-    padding: 5%;
-    overflow: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
+/*********** HOME PAGE SLIDES ************/
 #slides-container{
     margin-left: 275px;
     margin: 0; 
@@ -90,6 +82,19 @@ nav{
     letter-spacing: .08em;
 }
 
+/*********** PAGE CONTENT ************/
+#main-container{
+    margin-left: 275px;
+    color: black;
+    padding: 5%;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 #page-title{
     font-size: 2.25em;
     font-weight: 700;
@@ -97,6 +102,7 @@ nav{
     text-align: center;
 }
 
+/*********** SHOP NAVIGATION ************/
 #shop-navigation{
     list-style-type: none;
     text-align: center;
@@ -122,6 +128,7 @@ nav{
     font-size: 0.8em;
 }
 
+/*********** SHOP SECTIONS, ROWS, AND BANNERS ************/
 .section{
     width: 65%;
     margin: 0 auto;
@@ -152,10 +159,12 @@ nav{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
 }
 
+/* for spacing purposes in each row*/
 .spacer{
     width: 5%;
 }
 
+/*********** PRODUCT DISPLAYS ON SHOP PAGE ************/
 .product-details{
     margin-top: 0.7em;
 }
@@ -187,6 +196,7 @@ nav{
     line-height: 1.5em;
 }
 
+/*********** PRODUCT DETAILS PAGE ************/
 #back-nav{
     font-weight: 700;
     font-size: 1em;
@@ -212,6 +222,7 @@ nav{
 
 #product-image img{
     width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
 }
 
 #product-title{
@@ -236,6 +247,7 @@ p{
     color: #4A4A4A;
 }
 
+/* for size selection*/
 .color-option{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -255,6 +267,7 @@ p{
     height: 35px;
 }
 
+/* for size selection */
 .size-option{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -271,6 +284,7 @@ label{
     color: #9B9B9B;
 }
 
+/* for quantity input */
 input[type=number]{
     font-family: 'Effra';
     border: none;
@@ -282,7 +296,6 @@ input[type=number]{
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     appearance: textfield;
-    
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -303,3 +316,15 @@ input[type=number]::-webkit-outer-spin-button {
     color: #9B9B9B;
 }
 
+/* add to cart button */
+#add-to-cart{
+    width: 40%;
+    height: 2.5em;
+    color: white;
+    background-color: #4A4A4A;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    font-family: 'Effra';
+    letter-spacing: .1em;
+}
