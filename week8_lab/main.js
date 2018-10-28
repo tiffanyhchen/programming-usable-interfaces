@@ -64,12 +64,21 @@ function generateRandomAge() {
 /*** Document Load ****/
 $(document).ready(function() {
 
-  // generate a random animal when the document opens
+  var savedAnimals = [];
+  if(savedAnimals.length < 5){
+    
+  }
+
+});
+
+
+function saveAnimal(savedAnimals){
+   // generate a random animal when the document opens
   var animal = JSON.parse(localStorage.getItem("savedAnimal"));
-  var savedAnimal = true;
+  var hasSavedAnimal = true;
   if (animal == null){
     animal = generateRandomAnimal();
-    savedAnimal = false;
+    hasSavedAnimal = false;
   }  else{
     $("#save").text("Clear Animal");
   }
@@ -78,7 +87,7 @@ $(document).ready(function() {
   $("#animal-img").attr("src", animal.image);
 
   $("#save").click(function() {
-    if(savedAnimal){
+    if(hasSavedAnimal){
       localStorage.removeItem("savedAnimal");
       $("#response").text("Cleared!");
       $("#response").css("display", "block");
@@ -88,4 +97,4 @@ $(document).ready(function() {
       $("#response").css("display", "block");
     }
   });
-});
+}

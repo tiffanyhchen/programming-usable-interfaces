@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- fonts -->
+        <script type="text/javascript">
+            (function() {
+                var trial = document.createElement('script');
+                trial.type = 'text/javascript';
+                trial.async = true;
+                trial.src = 'https://easy.myfonts.net/v2/js?sid=221737(font-family=Effra+Bold)&sid=221746(font-family=Effra)&sid=221853(font-family=Effra+Medium)&sid=221875(font-family=Effra+Light)&key=Gg7vzqV00L';
+                var head = document.getElementsByTagName("head")[0];
+                head.appendChild(trial);
+            })();
+        </script>
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Muddy Paws Adventure Gear</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="update_cart_count.js" type="text/javascript"></script>
+        <script src="add_to_cart.js" type="text/javascript"></script>
+        <meta charset="UTF-8">
+    </head>
+    
+    <body>
+        <!-- navigation -->
+        <nav>
+            <div id="nav-title">MUDDY PAWS<br/> ADVENTURE GEAR</div>
+            <div class="nav-link"><a href="index.html">HOME</a></div>
+            <div class="nav-link"><a href="shop.html">SHOP</a></div>
+            <div class="nav-link"><a href="cart.html">CART [<span id="cart-item-count"></span>]</a></div>
+        </nav>
+        <div id="main-container">
+            <a href="shop.html" id="back-nav">&larr;&nbsp;BACK</a>
+            <!-- product page -->
+            <div id="product-page">
+                <div id="product-image">
+                    <img src="assets/product_1.jpg" id="product-image-src" alt="none"/>
+                </div>
+                <div id="product-descrp">
+                    <div id="product-title">Ultra Lite Dog Harness</div>
+                    <div id="product-price">$<span id="product-price-value">58</span></div>
+                    <p>A lightweight, comfy harness for your doggo.</p>
+                    <div class="detail">
+                        <div class="title">DETAILS</div>
+                        <p>15 in x 40 in x 8 in</p>
+                    </div>
+                    <div class="detail">
+                        <div class="title">COLORS</div>
+                        <div id="color-options">
+                            <input type="radio" class="color-option" value="blue" name="color" style="background-color: #5FC0F8"/>
+                            <input type="radio" class="color-option" value="green" name="color" style="background-color: #B8E986"/>
+                            <input type="radio" class="color-option" value="orange" name="color" style="background-color: #FBC162"/>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="title">SIZE</div>
+                        <div>
+                            <input type="radio" class="size-option" id="s" name="size" value="s"/>
+                            <label class="size-label" for="s">S</label>
+                            <input type="radio" class="size-option" id="m" name="size" value="m"/>
+                            <label class="size-label" for="m">M</label>
+                            <input type="radio" class="size-option" id="l" name="size" value="l"/>
+                            <label class="size-label" for="l">L</label>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="title">QUANTITY</div>
+                        <div class="num-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" id="minus">-</button>
+                            <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" id="plus">+</button>
+                        </div>
+                    </div>
+                    <!-- add to cart -->
+                    <button class="grey-button" id="add-to-cart">
+                        ADD TO CART
+                    </button>
+                
+                    <div id="toast">
+                        Item added to cart!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
