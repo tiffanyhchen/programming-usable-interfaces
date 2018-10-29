@@ -1,20 +1,11 @@
+// Loads the number of itmes in the cart into the
+// navigation bar
 $(document).ready(function() {
-    var cart = JSON.parse(localStorage.getItem("cart"));
-    var itemCount = 0;
+    var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"));
     
-    if (cart !== null) 
-    {
-        itemCount = getItemCount(cart);
+    if(cartItemCount === null || cartItemCount === 0){
+        cartItemCount = 0;
     }
     
-    console.log("itemCount: " + itemCount);
-    $("#cart-item-count").text(itemCount);
+    $("#cart-item-count").text(cartItemCount);
 }); 
-
-function getItemCount(cart){
-    var itemCount = 0;
-    for(var i = 0; i < cart.length; i++){
-        itemCount += cart[i].quantity;
-    }
-    return itemCount;
-}
