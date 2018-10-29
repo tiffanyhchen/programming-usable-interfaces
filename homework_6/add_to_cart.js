@@ -34,6 +34,13 @@ $(document).ready(function() {
         var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"));
         addToCart(cart, cartItemCount);
     }); 
+    
+    // On color select, change image/color
+    $('input:radio[name=color]').change(function() {
+        console.log("change");
+        var pict = document.querySelector('input[name="color"]:checked').getAttribute("data-pic");
+        $("#product-image-src").attr("src", pict);
+    });
 });
 
 // Grabs content from page and adds item to cart
