@@ -16,7 +16,7 @@
         <!-- styles -->
         <link rel="stylesheet" type="text/css" href="styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="update_cart_count.js" type="text/javascript"></script>
+        <script src="js/update_cart_count.js" type="text/javascript"></script>
         <title>Muddy Paws Adventure Gear</title>
         <meta charset="UTF-8">
     </head>
@@ -28,6 +28,7 @@
             <div class="nav-link"><a href="index.html">HOME</a></div>
             <div class="nav-link"><a href="shop.html">SHOP</a></div>
             <div class="nav-link"><a href="cart.html">CART [<span id="cart-item-count"></span>]</a></div>
+            <div class="nav-link" id="login-link"><a href="login.html">LOGIN</a></div>
         </nav>
         <!-- shop -->
         <div id="main-container">
@@ -54,37 +55,41 @@
             <div class="section" id="for-dogs">
                 <img class="banner" src="assets/dog_banner.png" alt="none"/>
                 <div class="row">
-                    <a href="dog_harness.html" class="shop-product">
+                    <a href="product_1.html" class="shop-product">
                         <img src="assets/product_1.jpg" alt="none"/>
                         <div class="product-details">
                             <div class="first-line">
-                                <div class="product-name">Dog Harness</div>
-                                <div class="price">$99</div>
+                                <div class="product-name">Light Harness</div>
+                                <div class="price">$58</div>
                             </div>
-                            <div class="description">(Click this one!) An amazing snuggly harness for your best friend</div>
+                            <div class="description">An amazing snuggly harness for your best friend</div>
                         </div>
                     </a>
                     <span class="spacer"></span>
                     <div class="shop-product">
-                        <img src="assets/product_2.jpg" alt="none"/>
-                        <div class="product-details">
-                            <div class="first-line">
-                                <div class="product-name">Dog GoPro</div>
-                                <div class="price">$99</div>
+                        <a href="product_2.html" class="shop-product">
+                            <img src="assets/product_2.jpg" alt="none"/>
+                            <div class="product-details">
+                                <div class="first-line">
+                                    <div class="product-name">Master Harness</div>
+                                    <div class="price">$99</div>
+                                </div>
+                                <div class="description">Secure, reflective, and multiuse</div>
                             </div>
-                            <div class="description">See the world from your pupper’s perspective</div>
-                        </div>
+                        </a>
                     </div>
                     <span class="spacer"></span>
                     <div class="shop-product">
-                        <img src="assets/product_3.jpg" alt="none"/>
-                        <div class="product-details">
-                            <div class="first-line">
-                                <div class="product-name">Dog Smackos</div>
-                                <div class="price">$99</div>
+                        <a href="product_3.html" class="shop-product">
+                            <img src="assets/product_3.jpg" alt="none"/>
+                            <div class="product-details">
+                                <div class="first-line">
+                                    <div class="product-name">Flatline Leash</div>
+                                    <div class="price">$20</div>
+                                </div>
+                                <div class="description">Make your doggo drag you around</div>
                             </div>
-                            <div class="description">Chomp chomp on a nom nom</div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -94,36 +99,42 @@
                 <img class="banner" src="assets/cat_banner.png" alt="none"/>
                 <div class="row">
                     <div class="shop-product">
-                        <img src="assets/product_placeholder.jpeg" alt="none"/>
-                        <div class="product-details">
-                            <div class="first-line">
-                                <div class="product-name">Cat Harness</div>
-                                <div class="price">$99</div>
+                        <a href="product_4.html" class="shop-product">
+                            <img src="assets/product_4.jpg" alt="none"/>
+                            <div class="product-details">
+                                <div class="first-line">
+                                    <div class="product-name">Pusheen Cat Collar</div>
+                                    <div class="price">$43</div>
+                                </div>
+                                <div class="description">Mark them as your own</div>
                             </div>
-                            <div class="description">So your unwilling friend won't flee</div>
-                        </div>
+                        </a>
                     </div>
                     <span class="spacer"></span>
                     <div class="shop-product">
-                        <img src="assets/product_placeholder.jpeg" alt="none"/>
-                        <div class="product-details">
-                            <div class="first-line">
-                                <div class="product-name">Cat Leash</div>
-                                <div class="price">$99</div>
+                        <a href="product_5.html" class="shop-product">
+                            <img src="assets/product_5.jpg" alt="none"/>
+                            <div class="product-details">
+                                <div class="first-line">
+                                    <div class="product-name">Cat Leash</div>
+                                    <div class="price">$25</div>
+                                </div>
+                                <div class="description">Restrict the movement of your kitty</div>
                             </div>
-                            <div class="description">Restrict the movement of your pissy kitty</div>
-                        </div>
+                        </a>
                     </div>
                     <span class="spacer"></span>
                     <div class="shop-product">
-                        <img src="assets/product_placeholder.jpeg" alt="none"/>
-                        <div class="product-details">
-                            <div class="first-line">
-                                <div class="product-name">Cat Backpack</div>
-                                <div class="price">$99</div>
+                        <a href="product_6.html" class="shop-product">
+                            <img src="assets/product_6.png" alt="none"/>
+                            <div class="product-details">
+                                <div class="first-line">
+                                    <div class="product-name">Cat Backpack</div>
+                                    <div class="price">$99</div>
+                                </div>
+                                <div class="description">For your lazy cat</div>
                             </div>
-                            <div class="description">For your lazy cat</div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
