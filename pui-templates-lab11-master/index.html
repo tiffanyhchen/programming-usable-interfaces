@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <!-- jQuery -->
+    <script src="lib/jquery.js"></script>
+    <!-- handlebars -->
+    <script src="lib/handlebars-v4.0.11.js"></script>
+    <!-- custon JavaScript -->
+    <script src="main.js"></script>
+    <!-- custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="product-detail-container">
+    </div>
+    <div id="product-selection-container">
+    </div>
+
+    <!-- TODO (Step 3): add HTML template for product selection here -->
+    <script id="selection-template" type="text/x-handlebars-template">
+        {{#each cinnamonBuns}}
+            <div class="product-selection" id={{ id }}>
+                <img src={{ img }}>
+            </div>
+        {{/each}}
+    </script>
+
+    <!-- TODO (Step 5): add HTML template for product detail here -->
+   <script id="detail-template" type="text/x-handlebars-template">
+        <div class="product-detail">
+            <h1>{{ name }}</h1>
+            <p>{{ price }}</p>
+            <img src={{ img }}>
+        </div>
+    </script>
+
+</body>
+</html>
